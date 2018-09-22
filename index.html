@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>チーズアカデミー</title>
+    <meta name="description" content=“世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。”>
+    <meta property="og:title" content="チーズアカデミー">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="チーズアカデミー" />
+    <meta property="og:description" content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="#">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/manu.js"></script>
+    <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
+</head>
+
+<body>
+    <!-- ここから記述しよう -->
+
+    <!-- <div class="hero">
+        <img src="img/mainbg.png" width="1600" height="1200" alt="hero">
+        <div>
+            <h1 class="main-title">世界を変えるチーズを作ろう</h1>
+            <p class="sub-title">チーズ職人養成学校「チーズアカデミーTOKYO」</p>
+        </div>
+    </div> -->
+
+
+    <div class="hero layer layer-bg" id="top">
+        <div class="layer-txt">
+            <h1 class="main-title">世界を変えるチーズを作ろう</h1>
+            <p class="sub-title">チーズ職人養成学校「チーズアカデミーTOKYO」
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="site-logo main-sitemenu">
+            <a href="#top">
+                <img src="img/header_logo.png" alt="チーズアカデミーロゴ">
+            </a>
+        </div>
+        <nav class="gnav main-sitemenu">
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item">
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li class="gnav__menu__item">
+                    <a href="#cource">COURSE</a>
+                </li>
+                <li class="gnav__menu__item">
+                    <a href="#news">NEWS</a>
+                </li>
+                <li class="gnav__menu__item">
+                    <a href="#access">ACCESS</a>
+                </li>
+                <li class="gnav__menu__item">
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="header-change main-sitemenu">
+        <div class="site-logo">
+            <a href="#top">
+                <img src="img/header_logo_white.png" alt="チーズアカデミーロゴ">
+            </a>
+        </div>
+        <nav class="gnav">
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item">
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li class="gnav__menu__item">
+                    <a href="#cource">COURSE</a>
+                </li>
+                <li class="gnav__menu__item">
+                    <a href="#news">NEWS</a>
+                </li>
+                <li class="gnav__menu__item">
+                    <a href="#access">ACCESS</a>
+                </li>
+                <li class="gnav__menu__item">
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="wrapper">
+
+
+
+
+        <div id="about-bg">
+
+            <div class="sp-menu">
+                <nav class="globalMenuSp">
+                    <ul class="sp-menu-flex">
+                        <li class="sp-menu-items">
+                            <a href="#top">TOP</a>
+                        </li>
+                        <li class="sp-menu-items">
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li class="sp-menu-items">
+                            <a href="#cource">COURSE</a>
+                        </li>
+                        <li class="sp-menu-items">
+                            <a href="#news">NEWS</a>
+                        </li>
+                        <li class="sp-menu-items">
+                            <a href="#access">ACCESS</a>
+                        </li>
+                        <li class="sp-menu-items">
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    </ul>
+                </nav>
+                <div class="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span>menu</span>
+                </div>
+            </div>
+            <script>
+                $(function () {
+                    $('.navToggle').click(function () {
+                        $(this).toggleClass('active');
+
+                        if ($(this).hasClass('active')) {
+                            $('.globalMenuSp').addClass('active');
+                        } else {
+                            $('.globalMenuSp').removeClass('active');
+                        }
+                    });
+                });
+            </script>
+            <script>
+                $('a[href^="#"]').click(function () {
+                    var speed = 800;
+                    var href = $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                    return false;
+                });
+            </script>
+
+
+
+
+            <h2 id="about">ABOUT</h2>
+            <div class="about-content">
+                <p id="about-first">チーズアカデミーについて</p>
+                <p class="about-margin-bottom40px">チーズアカデミーは、チーズ職人養成学校です。</p>
+                <p class="about-margin-bottom40px">チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。
+                    <br> そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。
+                </p>
+                <p class="about-margin-bottom40px">そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。</p>
+                <p id="about-second">卒業後、チーズ自給自足のバックアップはもちろんのこと、
+                    <br> チーズ職人への就職・転職もサポートします。
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="swiper-container loading">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(img/about_01.jpg)">
+                <img src="img/about_01.jpg" class="entity-img" />
+                <div class="content">
+                    <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">チーズは美味しい</p>
+                    <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/about_02.jpg)">
+                <img src="img/about_02.jpg" class="entity-img" />
+                <div class="content">
+                    <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">チーズは正義</p>
+                    <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/about_03.jpg)">
+                <img src="img/about_03.jpg" class="entity-img" />
+                <div class="content">
+                    <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">チーズは愛</p>
+                    <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/about_04.jpg)">
+                <img src="img/about_04.jpg" class="entity-img" />
+                <div class="content">
+                    <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">チーズは平和</p>
+                    <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </section>
+
+
+
+
+    <div class="wrapper">
+        <div id="course-bg">
+            <h2 id="cource">COURSE</h2>
+            <div class="content">
+                <p id="cource-first">未経験からでもスタートができるよう、カリキュラムは多くの専門家や
+                    <br> 現役チーズ職人のアドバイスのもと、作られました。
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="cource-flexbox">
+            <section class="main">
+                <img src="img/course_01.jpg" alt="" class="cource-img">
+            </section>
+            <section class="side flex-2clum">
+                <div>
+                    <h2 class="cource-title">本格的な農園を使った実地研修</h2>
+                </div>
+                <div class="w480">
+                    <p>チーズアカデミーでは、本格的な農園を使った実地研修を行うことができます。
+                        <br> プロとして活躍するチーズ職人も使用するような、広大で環境も整った農園を余すところなく使い、卒業時には本格的なチーズを自分の力で作れる実践力の養成を目指します。
+                    </p>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="cource-flexbox-reverce">
+            <section class="main">
+                <img src="img/course_02.jpg" alt="" class="cource-img">
+            </section>
+            <section class="side flex-2clum-left">
+                <div>
+                    <div>
+                        <h2 class="cource-title">卒業制作はティスティング審査あり</h2>
+                    </div>
+                    <div class="w480">
+                        <p>チーズ作りには、しっかりとした食に関する知識が欠かせません。
+                            <br> チーズアカデミーでは、一流講師陣による、チーズ作りに必要ないろはを余すところなく学べます。
+                            <br> チーズそのものでなく、栄養学全般を学ぶことも可能ですので、チーズ以外への展開も夢ではないでしょう。
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="cource-flexbox">
+            <section class="main">
+                <img src="img/course_03.jpg" alt="" class="cource-img">
+            </section>
+            <section class="side flex-2clum">
+                <div>
+                    <h2 class="cource-title">本格的な農園を使った実地研修</h2>
+                </div>
+                <div class="w480">
+                    <p>チーズアカデミーでは最後の2ヶ月間で卒業制作を実施。
+                        <br>卒業制作として、チーズ作りを実際に行います。
+                        <br>卒業後、 一般参加によるティスティング審査があるため、作り手の目線だけでなく、消費者の目線から、卒業制作作品としてのチーズを、しっかりと評価いただくことができます。
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="news" id="news">
+            <h2>NEWS</h2>
+            <p>ニュース</p>
+        </div>
+        <div class="newscontents">
+            <div class="newsdivlink">
+                <a href="#">
+                </a>
+                <div>
+                    <img src="img/news_img.jpg" alt="cheeseの画像">
+                    <p class="newstime">2018/6/17</p>
+                    <p>チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋 「Kosuge Pizza」が渋谷でオープンしました！</p>
+                </div>
+            </div>
+            <div class="newsmargin newsdivlink">
+                <a href="#">
+                </a>
+                <div>
+                    <img src="img/news_img.jpg" alt="cheeseの画像">
+                    <p class="newstime">2018/6/17</p>
+                    <p>チーズアカデミー卒業生のコスゲさんによる チーズだけをふんだんに使用した話題のピザ屋 「Kosuge Pizza」が渋谷でオープンしました！</p>
+                </div>
+            </div>
+            <div class="newsdivlink">
+                <a href="#">
+                </a>
+                <div>
+                    <img src="img/news_img.jpg" alt="cheeseの画像">
+                    <p class="newstime">2018/6/17</p>
+                    <p>チーズアカデミー卒業生のコスゲさんによる チーズだけをふんだんに使用した話題のピザ屋 「Kosuge Pizza」が渋谷でオープンしました！</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="#" class="square_btn">More</a>
+        </div>
+
+        <div class="accesscontents">
+
+            <div class="accessmap" id="access">
+                <h2>ACCESS</h2>
+                <p>会社情報</p>
+            </div>
+
+
+            <div class="mapfromgoogle">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.3492522166835!2d139.71328572924384!3d35.66722528829898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9faa249f2b%3A0x3563e92b2a0598d3!2z44CSMTA3LTAwNjEg5p2x5Lqs6YO95riv5Yy65YyX6Z2S5bGx77yT5LiB55uu77yV4oiS77yW!5e0!3m2!1sja!2sjp!4v1532346845197"
+                    width="600" height="250" frameborder="0" style="border:0" allowfullscreen>
+                </iframe>
+            </div>
+            <table class="maptable">
+                <tr class="mapflex">
+                    <td class="mapflextitle">学校名</td>
+                    <td class="mapflexcontents">チーズアカデミー東京</td>
+                </tr>
+                <tr class="mapflex">
+                    <td class="mapflextitle">事務所所在地</td>
+                    <td class="mapflexcontents">〒107-0061 東京都港区北青山3-5-6 青朋ビル2F</td>
+                </tr>
+                <tr class="mapflex">
+                    <td class="mapflextitle">TEL</td>
+                    <td class="mapflexcontents">03-5413-5045</td>
+                </tr>
+                <tr class="mapflex">
+                    <td class="mapflextitle">FAX</td>
+                    <td class="mapflexcontents">03-5413-5046</td>
+                </tr>
+                <tr class="mapflex">
+                    <td class="mapflextitle">MAIL</td>
+                    <td class="mapflexcontents">dummy@cheeseacademy.tokyo</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="contactformcontainer">
+            <div class="contactfirst">
+                <h2 id="contact">Contact</h2>
+                <p class="contact1">説明会お申し込み・お問い合わせ</p>
+                <p class="contact2">ぜひ1度、足を運んでみませんか。説明会は随時開催中。
+                    <br>その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
+                <p class="contact3">※チーズアカデミーは実際には存在しません。
+                    <br>間違っても問い合わせしないようお願いいたします。</p>
+            </div>
+
+            <div class="contactform">
+                <form action="" method="post">
+                    <table>
+                        <tr class="contactflex">
+                            <td class="formpartstitle formbordertitle">
+                                <label for="name">名前</label>
+                            </td>
+                            <td class="formcontents formbordercontents">
+                                <input type="text" name="user_name" id="neme" class="inputborder">
+                            </td>
+                        </tr>
+                        <tr class="contactflex">
+                            <td class="formpartstitle formbordertitle">
+                                <label for="kana">カナ</label>
+                            </td>
+                            <td class="formcontents formbordercontents">
+                                <input type="text" name="user_kananame" id="kana" class="inputborder">
+                            </td>
+                        </tr>
+                        <tr class="contactflex">
+                            <td class="formpartstitle formbordertitle">
+                                <label for="mail">メールアドレス</label>
+                            </td>
+                            <td class="formcontents formbordercontents">
+                                <input type="email" name="user_email" id="mail" class="inputborder">
+                            </td>
+                        </tr>
+                        <tr class="contactflex">
+                            <td class="formpartstitle formbordertitle">
+                                <label for="cheeschoice">cheeseアカデミーを
+                                    <br>知ったきっかけ</label>
+                            </td>
+                            <td class="formcontents formbordercontents">
+                                <select name="user_choice" id="cheeschoice" class="inputborder">
+                                    <option value="">選択してください</option>
+                                    <option value="google検索">google検索</option>
+                                    <option value="SNS">SNS</option>
+                                    <option value="紹介">紹介</option>
+                                    <option value="たまたま通りかかった">たまたま通りかかった</option>
+                                    <option value="その他">その他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="contactflex">
+                            <td class="formpartstitle formbordertitle">
+                                <label for="incentive">志望動機</label>
+                            </td>
+                            <td class="formcontents formbordercontents">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="user_incentive_kigyou" id="incentive"> 　起業をしたい</li>
+                                    <li>
+                                        <input type="checkbox" name="user_incentive_tensyoku" id="incentive"> 　チーズ系企業に就職・転職したい</li>
+                                    <li>
+                                        <input type="checkbox" name="user_incentive_chesework" id="incentive"> 　チーズと関わる仕事をしており、仕事に生かしたい</li>
+                                    <li>
+                                        <input type="checkbox" name="user_incentive_kyoyo" id="incentive"> 　チーズの教養を身につけたい</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="contactflex">
+                            <td class="formpartstitle formdetail formbordertitle">
+                                <label for="detail">詳細</label>
+                            </td>
+                            <td class="formcontents formbordercontents">
+                                <textarea name="user_detail" id="detail" class="inputborderdetail"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="buttons">
+                        <input type="submit" value="送信" class="square_btn">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footercontents">
+            <p>copyrights 2016-2018 Cheeese Academy Tokyo All RIghts Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script>
+        var sliderSelector = '.swiper-container',
+            options = {
+                init: false,
+                loop: true,
+                speed: 800,
+                autoplay: true,
+                slidesPerView: 2, // or 'auto'
+                // spaceBetween: 10,
+                centeredSlides: true,
+                effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+                coverflowEffect: {
+                    rotate: 50, // Slide rotate in degrees
+                    stretch: 0, // Stretch space between slides (in px)
+                    depth: 100, // Depth offset in px (slides translate in Z axis)
+                    modifier: 1, // Effect multipler
+                    slideShadows: true, // Enables slides shadows
+                },
+                grabCursor: true,
+                parallax: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    1023: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    }
+                },
+                // Events
+                on: {
+                    imagesReady: function () {
+                        this.el.classList.remove('loading');
+                    }
+                }
+            };
+        var mySwiper = new Swiper(sliderSelector, options);
+
+        // Initialize slider
+        mySwiper.init();
+    </script>
+
+</body>
+
+</html>
